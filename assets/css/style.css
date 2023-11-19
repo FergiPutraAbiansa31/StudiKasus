@@ -1,0 +1,48 @@
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Sidebar Styles */
+    #sidebar {
+        height: 100%;
+        position: fluid;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #2b7035; /* Sidebar background color */
+        padding-top: 20px;
+    }
+
+    #sidebar ul.nav flex-column {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    #sidebar .nav-link {
+        color: #fff; /* Sidebar link color */
+    }
+
+    #sidebar .nav-link.active {
+        font-weight: bold;
+    }
+
+    /* Main Content Styles */
+    main {
+        margin-top: 20px;
+        margin-left: 240px; /* Adjust based on your sidebar width */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        #sidebar {
+            position: static;
+            width: 100%;
+            height: auto;
+        }
+
+        main {
+            margin-left: 0;
+        }
+    }
+</style>
